@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.vaadin</groupId>
+    <artifactId>vaadin-confirm-dialog-flow-parent</artifactId>
+    <version>21.0.0</version>
+  </parent>
+  <groupId>com.vaadin</groupId>
+  <artifactId>vaadin-confirm-dialog-flow</artifactId>
+  <version>21.0.0</version>
+  <name>Vaadin Confirm Dialog</name>
+  <url>http://vaadin.com/vaadin-flow-components/vaadin-confirm-dialog-flow-parent/vaadin-confirm-dialog-flow</url>
+  <licenses>
+    <license>
+      <name>Commercial Vaadin Developer License version 4.0</name>
+      <url>https://vaadin.com/license/cvdl-4.0</url>
+    </license>
+  </licenses>
+  <properties>
+    <osgi.bundle.license>https://vaadin.com/license/cvdl-4.0</osgi.bundle.license>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>flow-server</artifactId>
+      <version>8.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

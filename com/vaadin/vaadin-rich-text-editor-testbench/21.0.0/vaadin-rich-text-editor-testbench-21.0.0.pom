@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.vaadin</groupId>
+    <artifactId>vaadin-rich-text-editor-flow-parent</artifactId>
+    <version>21.0.0</version>
+  </parent>
+  <groupId>com.vaadin</groupId>
+  <artifactId>vaadin-rich-text-editor-testbench</artifactId>
+  <version>21.0.0</version>
+  <name>Vaadin Rich Text Editor Testbench API</name>
+  <url>http://vaadin.com/vaadin-flow-components/vaadin-rich-text-editor-flow-parent/vaadin-rich-text-editor-testbench</url>
+  <licenses>
+    <license>
+      <name>Commercial Vaadin Developer License version 4.0</name>
+      <url>https://vaadin.com/license/cvdl-4.0</url>
+    </license>
+  </licenses>
+  <dependencies>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-testbench-core</artifactId>
+      <version>7.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build />
+</project>
